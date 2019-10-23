@@ -65,6 +65,9 @@
 				"uri": "css/style.css"
 			}]
 		},
+		"resourceRoots": {
+			"openui5.camera": "./thirdparty/openui5/camera/"
+			 },
 		"routing": {
 			"config": {
 				"routerClass": "sap.m.routing.Router",
