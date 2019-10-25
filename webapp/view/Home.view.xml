@@ -1,13 +1,24 @@
-<mvc:View controllerName="test.test.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:cam="openui5.camera">
+<mvc:View controllerName="test.test.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"  xmlns="sap.m">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content><cam:Camera
-    id="idCamera"
-    width="800"
-    height="600"
-    snapshot=".onSnapshot" /></content>
+					<content>
+							<VBox id="wow">
+								<items> 
+						<!--						<video id="video" width="640" height="480" autoplay></video>-->
+						<!--<button id="snap">Snap Photo</button>-->
+						<!--<canvas id="canvas" width="640" height="480"></canvas>-->
+						<!--<Image id="imagePreview" width="500px" height="500px"></Image>-->
+						<!--<Button text="Versturen" press="onCapture" type="Emphasized"/>-->
+						<!--<Button text="Cancel" press="onCloseDialog"/>-->
+						<!--<Button xmlns="sap.m" text="Take Photo" id="idCapture" press="takePhoto" icon="sap-icon://camera"/>-->
+						<Button id="idCamera" press="onCapture()" text="Take Picture"></Button>
+						<Image id="testImage" src="test"></Image>
+						<Button id="Send" press="setImage()" text="See Picture"></Button> 
+						</items>
+						</VBox>
+					</content>
 				</Page>
 			</pages>
 		</App>
